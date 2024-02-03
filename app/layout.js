@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Pepperlyl - NFT & Metaverse Marketplace Waitlist",
+  title: "Pepperlyl - NFT & Metaverse Marketplace",
   description:
     "Unlock endless creativity in the first NFT & Metaverse Marketplace. Join our waitlist for exclusive access to web3 gaming, NFT art, digital art, and more.",
   keywords: [
