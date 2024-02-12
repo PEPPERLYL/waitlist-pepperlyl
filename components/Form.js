@@ -130,6 +130,9 @@ const Form = () => {
         pauseOnHover: true,
         draggable: true,
       });
+
+      // Refresh the webpage
+      window.location.reload();
     }
   };
 
@@ -159,7 +162,7 @@ const Form = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Email*"
-              className="text-white text-opacity-70 text-lg font-medium bg-transparent border-none focus:outline-none w-full"
+              className="text-white text-opacity-90 text-lg font-medium bg-transparent border-none focus:outline-none w-full"
             />
           </motion.div>
           <motion.div
@@ -174,7 +177,7 @@ const Form = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Full Name*"
-              className="text-white text-opacity-70 text-lg font-medium bg-transparent border-none focus:outline-none w-full"
+              className="text-white text-opacity-90 text-lg font-medium bg-transparent border-none focus:outline-none w-full"
             />
           </motion.div>
         </div>
@@ -193,7 +196,7 @@ const Form = () => {
               placeholder="Age*"
               min="16"
               max="60"
-              className="text-white w-full text-opacity-70 text-lg font-medium bg-transparent border-none focus:outline-none"
+              className="text-white w-full text-opacity-90 text-lg font-medium bg-transparent border-none focus:outline-none"
             />
           </motion.div>
           <motion.div
@@ -208,7 +211,7 @@ const Form = () => {
               value={country}
               onChange={(e) => handleCountryChange(e.target.value)}
               placeholder="Country*"
-              className="text-white text-opacity-70 text-lg font-medium bg-transparent border-none focus:outline-none w-full"
+              className="text-white text-opacity-90 text-lg font-medium bg-transparent border-none focus:outline-none w-full"
             />
             {suggestedCountries.length > 0 && (
               <div className="absolute top-12 left-0 right-0 bg-white rounded-b-lg z-10 overflow-y-auto max-h-20">
@@ -239,7 +242,7 @@ const Form = () => {
             value={job}
             onChange={(e) => handleJobChange(e.target.value)}
             placeholder="What best describes you?"
-            className="text-white text-lg font-medium bg-transparent border-none focus:outline-none w-full"
+            className="text-white text-opacity-90  text-lg font-medium bg-transparent border-none focus:outline-none w-full"
           />
           {suggestedJobs.length > 0 && (
             <div className="absolute top-12 left-0 right-0 bg-white rounded-b-lg z-10 overflow-y-auto max-h-20">
