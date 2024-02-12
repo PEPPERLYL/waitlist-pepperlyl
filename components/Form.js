@@ -130,9 +130,10 @@ const Form = () => {
         pauseOnHover: true,
         draggable: true,
       });
-
-      // Refresh the webpage
-      window.location.reload();
+      // Refresh the webpage after 20 seconds
+      setTimeout(() => {
+        window.location.reload();
+      }, 20000); // 20 seconds delay
     }
   };
 
